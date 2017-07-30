@@ -5,4 +5,10 @@ sudo: required
 language: c
 
 script: 
+    - sudo apt-get install build-essential linux-headers-$(uname -r)
     - make
+    - insmod morse-beeper.ko
+    - dmesg | tail -1
+    - rmmod morse-beeper
+    - dmesg | tail -1
+    - make clean
