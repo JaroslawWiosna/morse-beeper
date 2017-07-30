@@ -1,0 +1,21 @@
+#       .morse-beeper.ko.cmd
+#       .morse-beeper.mod.o.cmd
+#       .morse-beeper.o.cmd
+#       .tmp_versions/
+#       Module.symvers
+#       modules.order
+#       morse-beeper.ko
+#       morse-beeper.mod.c
+#       morse-beeper.mod.o
+#       morse-beeper.o
+
+*.ko.cmd
+*.mod.o.cmd
+*.o.cmd
+.tmp_versions/
+Module.symvers
+modules.order
+*.ko
+*.mod.c
+*.mod.o
+*.o
