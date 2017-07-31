@@ -6,8 +6,11 @@ language: c
 
 script: 
     - sudo apt-get install build-essential linux-headers-$(uname -r)
+    - sudo apt-get install xdotool
     - make
     - sudo insmod morse-beeper.ko
+    - dmesg | tail -1
+    - xdotool key F2
     - dmesg | tail -1
     - sudo rmmod morse-beeper
     - dmesg | tail -1
