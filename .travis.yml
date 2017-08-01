@@ -6,6 +6,7 @@ language: c
 
 script: 
     - sudo apt-get install build-essential linux-headers-$(uname -r)
+    - sudo apt-get install sox
     - make
     - sudo insmod morse-beeper.ko
     - dmesg | tail -1
